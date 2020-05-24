@@ -22,5 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+
+        mAdapter = new MyListAdapter(MyListData.createNumberList(100));
+        recyclerView.setAdapter(mAdapter);
     }
 }
