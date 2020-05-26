@@ -33,6 +33,7 @@ public class MyListAdapter extends RecyclerView.Adapter<MyListAdapter.ViewHolder
         MyListData myListData = listData.get(position);
 
         TextView number = holder.tv1;
+
         number.setText(myListData.getNumber());
     }
 

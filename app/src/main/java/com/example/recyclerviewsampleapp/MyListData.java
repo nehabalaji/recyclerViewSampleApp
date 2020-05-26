@@ -21,7 +21,7 @@ public class MyListData {
     public static ArrayList<MyListData> createNumberList(int count){
         ArrayList<MyListData> numbers = new ArrayList<>();
         for(int i=1; i<=count; i++){
-            numbers.add(new MyListData(""+i));
+            numbers.add(new MyListData(String.valueOf(i)));
         }
         return numbers;
     }
